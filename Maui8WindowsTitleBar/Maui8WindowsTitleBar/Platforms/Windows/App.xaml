@@ -5,8 +5,8 @@
     xmlns:maui="using:Microsoft.Maui"
     xmlns:local="using:Maui8WindowsTitleBar.WinUI">
     <maui:MauiWinUIApplication.Resources>
-        <DataTemplate x:Key="MauiAppTitleBarContainerTemplate">
-            <Grid x:Name="CustomAppTitlebar"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Height="28" Background="Red">
+        <DataTemplate x:Key="MauiAppTitleBarTemplate">
+            <Grid x:Name="CustomAppTitlebar"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="Red">
                 <TextBlock Text="Hi" Margin="5"/>
             </Grid>
         </DataTemplate>
