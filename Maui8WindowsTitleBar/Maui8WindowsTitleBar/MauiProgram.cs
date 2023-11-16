@@ -1,4 +1,7 @@
-﻿using Microsoft.Extensions.Logging;
+﻿#if WINDOWS
+using Maui8WindowsTitleBar.Platforms.Windows;
+#endif
+using Microsoft.Extensions.Logging;
 using Microsoft.Maui.LifecycleEvents;
 
 namespace Maui8WindowsTitleBar
@@ -16,19 +19,10 @@ namespace Maui8WindowsTitleBar
                 });
 
             builder.Services.AddMauiBlazorWebView();
+#if WINDOWS
+            TitleHelper.SetTitlebarColor(Colors.Blue);
+#endif
 
-//            builder.ConfigureLifecycleEvents(lifecycle =>
-//            {
-//#if WINDOWS
-//                lifecycle
-//                    .AddWindows(windows => windows.OnWindowCreated(async (window) =>
-//                    {
-//                        window.ExtendsContentIntoTitleBar = false;
-//                        await Task.Delay(100);
-//                        window.SetTitleBar(null);
-//                    }));
-//#endif
-//            });
 #if DEBUG
             builder.Services.AddBlazorWebViewDeveloperTools();
     		builder.Logging.AddDebug();
