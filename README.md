@@ -23,6 +23,7 @@ These are the steps to add this to your own app:
     </maui:MauiWinUIApplication.Resources>
 </maui:MauiWinUIApplication>
 ```
+The key parts of this are the declaration of the titlebar namespace, and then the definition of the DataTemplate.
 
 It is important to use the x:Key MauiAppTitleBarTemplate for the DataTemplate, and x:Name AppTitle for the TextBlock. Also you must use TitleContainer as the root of your DataTemplate. This TitleContainer is just a Grid that has some special logic in it to set the titlebar values.
 
