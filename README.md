@@ -1,6 +1,6 @@
 # maui8titlebar
 
-This sample shows a way to override the color of the Windows title bar in MAUI. You could actually use it to do other customizations based on the pattern here. 
+This sample shows a way to override the color of the Windows title bar in MAUI. You could actually use it to do other customizations based on the pattern here, once you have a handle to the titlebar container, you could do whatever you want with it. This sample uses MAUI Blazor but it should work fine in MAUI without Blazor.
 
 These are the steps to add this to your own app:
 
